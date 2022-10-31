@@ -23,13 +23,11 @@ const TabLink = styled.a`
   }
 `;
 const Links = (props) => {
-  const onClickHandler = (e) => {
-    const data = e.target.childNodes[0].data.toLowerCase();
-    props.onClick(data);
-  };
   return (
     <LinksBox>
-      <Logo src={logo} />
+      <Link to="/">
+        <Logo src={logo} />
+      </Link>
       <Link to="/">
         <TabLink>Home</TabLink>
       </Link>

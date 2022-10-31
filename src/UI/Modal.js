@@ -28,7 +28,7 @@ const ModalEle = styled.div`
   width: 60%;
   height: 70vh;
   background-color: white;
-  padding: rem;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   border-radius: 0.8rem;

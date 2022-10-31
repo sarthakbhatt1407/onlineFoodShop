@@ -204,13 +204,6 @@ const Contact = () => {
             value={inputFields.message}
           />
           <Button onClick={onSubmitHandler}>Submit</Button>
-          <Button
-            onClick={() => {
-              console.log(queryList);
-            }}
-          >
-            Show
-          </Button>
         </RightDiv>
       </ContactBox>
       <Footer>
