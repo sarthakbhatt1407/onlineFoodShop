@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../assets/logo.svg";
 
@@ -29,9 +30,12 @@ const Links = (props) => {
   return (
     <LinksBox>
       <Logo src={logo} />
-      <TabLink onClick={onClickHandler}>Home</TabLink>
-      <TabLink onClick={onClickHandler}>About</TabLink>
-      <TabLink onClick={onClickHandler}>Contact Us</TabLink>
+      <Link to="/">
+        <TabLink>Home</TabLink>
+      </Link>
+      <Link to="/contact-us">
+        <TabLink>Contact Us</TabLink>
+      </Link>
     </LinksBox>
   );
 };

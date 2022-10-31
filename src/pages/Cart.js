@@ -86,9 +86,7 @@ const Cart = (props) => {
   const emptyCart = useSelector((state) => state.emptyCart);
 
   const [addressPage, setAddressPage] = useState(emptyCart);
-  const checkoutClickHandler = () => {
-    setAddressPage(true);
-  };
+  const checkoutClickHandler = () => {};
   const cartTable = (
     <TableBox>
       <Table>
@@ -135,7 +133,6 @@ const Cart = (props) => {
           )}
         </CartButtonsDiv>
       </CartLastOption>
-      <CartAddressForm />
     </Modal>
   );
 };
